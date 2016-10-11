@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--为了向后兼容，action item的属性使用了app的命名空间-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <!--设置 app:showAsAction  ifRoom
+     Action Bar当有剩余空间时展示此item-->
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/menu_refresh"
+        app:showAsAction="ifRoom"
+        />
+
+    <!-- Location item 在 onCreateOptionsMenu() 中添加-->
+
+
+    <!--设置 support:showAsAction  never 当有剩余空间也不会展示
+     在Action Bar上，这里将setting放在溢出的菜单里 -->
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never"/>
+</menu>
