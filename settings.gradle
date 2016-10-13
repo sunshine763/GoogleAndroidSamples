@@ -1,1 +1,1 @@
-include ':actionbarcompat-basic', ':actionbarcompat-listpopupmenu'
+include ':actionbarcompat-basic', ':actionbarcompat-listpopupmenu','actionbarcompat-shareactionprovider'
