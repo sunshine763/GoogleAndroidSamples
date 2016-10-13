@@ -1,1 +1,1 @@
-include  ':actionbarcompat-basic'
+include ':actionbarcompat-basic', ':actionbarcompat-shareactionprovider'
