@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Intent intent=new Intent(this,DetailActivity.class);
         intent.putExtra(Constants.EXTRA_PARAM_ID,item.getId());
         ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,
-                new Pair<View, String>(view.findViewById(R.id.imageview_header), Constants.VIEW_NAME_HEADER_IMAGE),
+                new Pair<View, String>(view.findViewById(R.id.imageview_item), Constants.VIEW_NAME_HEADER_IMAGE),
                 new Pair<View, String>(view.findViewById(R.id.textview_name), Constants.VIEW_NAME_HEADER_TITLE)
         );
         ActivityCompat.startActivity(this,intent,activityOptionsCompat.toBundle());
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
 
             Item item = getItem(position);
-            ImageView imageview_header = (ImageView) convertView.findViewById(R.id.imageview_header);
+            ImageView imageview_header = (ImageView) convertView.findViewById(R.id.imageview_item);
             Picasso.with(imageview_header.getContext()).load(item.getThumbnailUrl()).into(imageview_header);
 
             TextView textview_name = (TextView) convertView.findViewById(R.id.textview_name);

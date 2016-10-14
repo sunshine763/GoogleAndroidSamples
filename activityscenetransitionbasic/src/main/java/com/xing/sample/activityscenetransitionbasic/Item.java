@@ -28,6 +28,15 @@ public class Item {
         this.mFileName=fileName;
     }
 
+    public static Item getItem(int id){
+        for (Item item:ITEMS){
+            if(item.getId()==id){
+                return item;
+            }
+        }
+        return null;
+    }
+
     public String getName() {
         return mName;
     }
