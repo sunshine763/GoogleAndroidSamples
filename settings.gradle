@@ -1,1 +1,1 @@
-include ':actionbarcompat-basic', ':actionbarcompat-listpopupmenu', ':activityscenetransitionbasic', 'actionbarcompat-shareactionprovider'
+include ':actionbarcompat-basic', ':actionbarcompat-listpopupmenu', ':activityscenetransitionbasic', ':advancedimmersivemode', 'actionbarcompat-shareactionprovider'
